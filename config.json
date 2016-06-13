@@ -1,0 +1,39 @@
+{
+    "dist": "app/public",
+    "sass": {
+        "bespoke": "src/scss",
+        "file": "src/vendor-styles/app.scss",
+        "paths": [
+            "src/components/foundation-sites/scss",
+            "src/components/motion-ui/src",
+            "src/components/slick-carousel/slick"
+        ]
+    },
+    "javascript": [
+        "src/components/jquery/dist/jquery.js",
+        "src/components/what-input/what-input.js",
+        "src/components/foundation-sites/js/foundation.core.js",
+        "src/components/foundation-sites/js/foundation.util.*.js",
+        "src/components/foundation-sites/js/foundation.abide.js",
+        "src/components/foundation-sites/js/foundation.accordion.js",
+        "src/components/foundation-sites/js/foundation.accordionMenu.js",
+        "src/components/foundation-sites/js/foundation.drilldown.js",
+        "src/components/foundation-sites/js/foundation.dropdown.js",
+        "src/components/foundation-sites/js/foundation.dropdownMenu.js",
+        "src/components/foundation-sites/js/foundation.equalizer.js",
+        "src/components/foundation-sites/js/foundation.interchange.js",
+        "src/components/foundation-sites/js/foundation.magellan.js",
+        "src/components/foundation-sites/js/foundation.offcanvas.js",
+        "src/components/foundation-sites/js/foundation.orbit.js",
+        "src/components/foundation-sites/js/foundation.responsiveMenu.js",
+        "src/components/foundation-sites/js/foundation.responsiveToggle.js",
+        "src/components/foundation-sites/js/foundation.reveal.js",
+        "src/components/foundation-sites/js/foundation.slider.js",
+        "src/components/foundation-sites/js/foundation.sticky.js",
+        "src/components/foundation-sites/js/foundation.tabs.js",
+        "src/components/foundation-sites/js/foundation.toggler.js",
+        "src/components/foundation-sites/js/foundation.tooltip.js",
+        "src/components/slick-carousel/slick/slick.min.js",
+        "src/js/!(app).js"
+    ]
+}

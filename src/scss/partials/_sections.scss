@@ -1,0 +1,107 @@
+// ====================
+// About Section
+// =====================
+#about {
+    background-image: url(../images/hero.png);
+    background: url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    padding: 60px;
+    h1 {
+        font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+    }
+    p {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+// ====================
+// Practice Areas
+// ====================
+#practice-areas {
+    margin-bottom: 60px;
+    li {
+        white-space: nowrap;
+        font-size: 0.9em;
+    }
+    h3 {
+        font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 80px;
+    }
+}
+
+.practice-list {
+    border-top: 3px solid $golden;
+    li {
+        border-bottom: 1px solid $grayish;
+        box-sizing: border-box;
+        color: $gray-text;
+    }
+}
+
+// ====================
+// News
+// ====================
+ #news{
+    background: url(../images/buildings.png);
+    background-image: url(../images/buildings.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+ }
+// ====================
+// Careers
+// ====================
+#careers {
+    box-sizing: border-box;
+}
+
+// ====================
+// Footer
+// ====================
+footer {
+    height: 60px;
+    li {
+        @extend .nowrap;
+        color: $golden;
+        padding-left: 0;
+        padding-right: 0;
+        a {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 0.9em;
+            color: inherit;
+        }
+    }
+    .row {
+        div {
+            height: 100%;
+            p {
+                padding-top: 11px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+.vanity {
+    min-height: 140px;
+    .columns {
+        hr {
+            margin-top: 68px;
+        }
+    }
+}

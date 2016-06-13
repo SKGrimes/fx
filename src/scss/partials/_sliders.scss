@@ -1,0 +1,29 @@
+
+
+
+
+.news-slider-box {
+    color: white;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+
+
+}
+
+
+ul.slick-dots li button {
+    width: 20px;
+    height: 1px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: white!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+
+.button-white {
+    background: white;
+    color: $golden;
+}

@@ -1,0 +1,195 @@
+.nowrap, footer li {
+  white-space: nowrap; }
+
+.greeting-title {
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.9; }
+
+.footer-title {
+  font-size: 1.4em;
+  margin-bottom: 42px; }
+
+.footer-title-small {
+  font-size: 1.1em; }
+
+.footer-accent {
+  width: 62px;
+  height: 4px;
+  border: none;
+  background: #ce9b2b;
+  margin: 0;
+  margin-bottom: 30px; }
+
+.known-height {
+  height: 300px; }
+
+.vertical-alignment {
+  height: 3px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.ylw-accent {
+  color: #ce9b2b; }
+
+.ylw-btn {
+  background-color: #ce9b2b; }
+  .ylw-btn:active {
+    background: #c09026; }
+
+.center-line {
+  position: relative;
+  top: 50px; }
+
+.more-padding {
+  padding-top: 60px; }
+
+.hr {
+  height: 8px;
+  width: 100%;
+  display: block;
+  background: #ce9b2b;
+  border-bottom: 8px solid #ce9b2b;
+  -webkit-box-shadow: 0px 1px 2px 0px #c09026;
+  -moz-box-shadow: 0px 1px 2px 0px #c09026;
+  box-shadow: 0px 1px 2px 0px #c09026; }
+
+#masthead {
+  box-sizing: border-box;
+  max-height: 100px;
+  width: 100%;
+  border-top: 4px solid #ce9b2b !important;
+  display: block; }
+
+.flexwrapped {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .flexwrapped img {
+    padding: 18px 0;
+    max-width: 50%; }
+
+.top-bar {
+  box-sizing: border-box;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background: #ffffff;
+  height: 60px;
+  padding-bottom: 0;
+  padding-top: 0; }
+  .top-bar div {
+    height: 60px; }
+    .top-bar div .menu {
+      box-sizing: border-box;
+      background-color: inherit;
+      height: 60px; }
+      .top-bar div .menu li {
+        height: 60px; }
+        .top-bar div .menu li a {
+          height: 56px;
+          border-top: 5px solid white;
+          box-sizing: border-box;
+          color: #888888; }
+
+a.active {
+  box-sizing: border-box;
+  height: 56px;
+  border-style: solid;
+  border-width: 5;
+  -moz-border-image: url("../images/border-highlight.png") 5 0;
+  -webkit-border-image: url("../images/border-highlight.png") 5 0;
+  -o-border-image: url("../images/border-highlight.png") 5 0;
+  border-image: url("../images/border-highlight.png") 5 0;
+  border-bottom: 0; }
+
+#about {
+  background-image: url(../images/hero.png);
+  background: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  padding: 60px; }
+  #about h1 {
+    font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0; }
+  #about p {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+
+#practice-areas {
+  margin-bottom: 60px; }
+  #practice-areas li {
+    white-space: nowrap;
+    font-size: 0.9em; }
+  #practice-areas h3 {
+    font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 20px; }
+  #practice-areas p {
+    margin-bottom: 80px; }
+
+.practice-list {
+  border-top: 3px solid #ce9b2b; }
+  .practice-list li {
+    border-bottom: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    color: #888888; }
+
+#news {
+  background: url(../images/buildings.png);
+  background-image: url(../images/buildings.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center; }
+
+#careers {
+  box-sizing: border-box; }
+
+footer {
+  height: 60px; }
+  footer li {
+    color: #ce9b2b;
+    padding-left: 0;
+    padding-right: 0; }
+    footer li a {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 0.9em;
+      color: inherit; }
+  footer .row div {
+    height: 100%; }
+    footer .row div p {
+      padding-top: 11px;
+      margin: 0; }
+
+.vanity {
+  min-height: 140px; }
+  .vanity .columns hr {
+    margin-top: 68px; }
+
+.news-slider-box {
+  color: white;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden; }
+
+ul.slick-dots li button {
+  width: 20px;
+  height: 1px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: white !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.button-white {
+  background: white;
+  color: #ce9b2b; }
+
+.sticky {
+  width: 100%; }

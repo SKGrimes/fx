@@ -1,0 +1,108 @@
+// =========
+//  Globals
+// =========
+// This is for sass that does not output anything. Esentially .footer-title
+// is what would go into the modules directory if there was enough to warrant
+// making one, but the foundation framework does ost of the heavey lifting
+
+// ====================================
+//  Declare Color Classes & Variables
+// ====================================
+$golden: rgb(206, 155, 43);
+$golden-dark: rgba(192, 144, 38, 1);
+$golden-rgb: rgb(206, 155, 43);
+$grayish:#e7e7e7; //rgb(231,231, 231) top bar border
+$gray-text: #888888;
+
+$darker: #212121;
+$darker-rgb: rgb(33,33,33); // text - experienced
+//#444444 rgb(68,68,68) - skilled
+
+
+
+
+// ====================================
+//  Typography
+// ====================================
+.nowrap {
+  white-space: nowrap;
+}
+
+
+
+.greeting-title {
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.9;
+
+}
+
+.footer-title {
+    font-size: 1.4em;
+    margin-bottom: 42px;
+
+}
+
+.footer-title-small {
+    font-size: 1.1em;
+}
+
+.footer-accent {
+    width: 62px;
+    height: 4px;
+    border: none;
+    background: $golden;
+    margin: 0;
+    margin-bottom: 30px;
+
+}
+
+
+
+// ====================================
+//  Utilities
+// ====================================
+.known-height {
+   height: 300px;
+}
+
+.vertical-alignment {
+	height: 3px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+
+.ylw-accent {
+    color: $golden;
+}
+
+.ylw-btn {
+    background-color: $golden;
+    &:active {
+        background: $golden-dark;
+    }
+}
+
+.center-line {
+    position: relative;
+    top: 50px;
+}
+
+.more-padding {
+    padding-top:60px;
+}
+
+
+
+.hr {
+    height: 8px;
+    width: 100%;
+    display: block;
+    background: $golden;
+    border-bottom: 8px solid $golden;
+    -webkit-box-shadow: 0px 1px 2px 0px $golden-dark;
+    -moz-box-shadow: 0px 1px 2px 0px $golden-dark;
+    box-shadow: 0px 1px 2px 0px$golden-dark;
+}
