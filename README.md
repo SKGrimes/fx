@@ -6,36 +6,21 @@ Just download everything as global as most of the task runners & services need t
 
 ```
 npm install -g eslint-plugin gulp nodemon mocha chain bower pm2
-```
-## Client
-
-The client setup is based on the [Auth0 Vue JWT Auth Repo](https://github.com/auth0-blog/vue-jwt-authentication) with some modifications.
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+cd fx && npm install && bower install
+npm start
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+The assets are served using express and the application is compiled into the app folder. Barring
+any express configurations, the entire project was built inside the src folder. bower is configured to output all of the components there which are referenced in the config.json file in root. The gulp tasks build & compile the foundation classes and then monitor the vendor and user scripts & scss and copy them.
+
+All static assets that are not dynamic are moved into the app/public folder as well. I ended up having to use imagemin because some of the files were properly massive when I pulled them out of ps
+for some reason.
+
+dragend is included in components but is not neccessary for the build.
+
+Also, I will update this with a more precise set of directions as node 6.x is used and the
+airbnb styleguid calls for using es6 features....e.g. it won't build/run withoiut them. Some of that is actually foundation-cli/foundation-sites. but I will update it as soon as I get a second.
+
 
 
 
@@ -43,13 +28,13 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Client
 
-The entry point for the app is at `bin/www` in is a node shell script that uses express as a simple server. 
+The entry point for the app is at `bin/www` in is a node shell script that uses express as a simple server.
 
 
 
 ## SRC
 
-The bulk of the application is constructed within `src` with the exception of the `views` files which are some markup and handlebars files that end up being compiled and served. 
+The bulk of the application is constructed within `src` with the exception of the `views` files which are some markup and handlebars files that end up being compiled and served.
 
 ## App
 
@@ -73,11 +58,11 @@ The bulk of the application is constructed within `src` with the exception of th
 │   ├── images
 │   ├── js
 │   │   ├── app.js	// concat all vendor scripts
-│   │   └── main.js 
+│   │   └── main.js
 │   └── scss/
 ├── config.json		// json configuration file for simplifying gulp task reqs.
 ├── eslintrc.json	// core style && linting using airbnb styyleguide
-├── package.json	
+├── package.json
 
 ```
 
@@ -286,7 +271,7 @@ http {
 After restarting nginx,
 
 ```
-$ sudo service nginx reload && sudo service nginx 
+$ sudo service nginx reload && sudo service nginx
 ```
 
 If proxypass wasn't enabled yet, you can see the default message. Or it is possible you already saw it in a previous step. However, with proxypass we will generate a hello message from nginx which should show up on port 80, e.g. `http:localhost/` or `127.0.0.1`, or even the above domains setup with dnsmasq like `http://love.your.self`. ect.
